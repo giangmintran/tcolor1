@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Teaser</title>
+  <title>TColor</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -23,6 +23,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/slide-image.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,10 +33,11 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
+            <img src="assets/img/logo/supfoto-square1.png" alt="" style=" width: 14%;
+            height: auto;"/>
           </a>
           <div class="navbar-collapse" id="">
-            <ul class="navbar-nav justify-content-between ">
+            <!-- <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <li class="">
                   <a class="mr-4" href="">
@@ -46,7 +48,7 @@
                   </a>
                 </li>
               </div>
-            </ul>
+            </ul> -->
 
             <div class="custom_menu-btn">
               <button onclick="openNav()">
@@ -82,17 +84,12 @@
           <div class="col-md-4 offset-md-1">
             <div class="detail-box">
               <h1>
-                <span> Modern</span> <br>
-                Apartment <br>
-                House
+                <span> TColor</span> <br>
               </h1>
               <p>
                 It is a long established fact that a reader will be distracted by the readable content of
               </p>
               <div class="btn-box">
-                <a href="" class="">
-                  Read More
-                </a>
               </div>
             </div>
           </div>
@@ -103,7 +100,7 @@
   </div>
 
   <!-- find section -->
-  <section class="find_section ">
+  <!-- <section class="find_section ">
     <div class="container">
       <form action="">
         <div class=" form-row">
@@ -122,7 +119,7 @@
 
       </form>
     </div>
-  </section>
+  </section> -->
 
   <!-- end find section -->
 
@@ -177,7 +174,37 @@
       </div>
       <div class="sale_container">
         <div class="box">
-          <div class="img-box">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
             <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
@@ -187,11 +214,41 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
+            <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h6>
@@ -200,11 +257,41 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
+            <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h6>
@@ -213,11 +300,41 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-4.jpg" alt="">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
+            <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h6>
@@ -226,11 +343,41 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-5.jpg" alt="">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
+            <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h6>
@@ -239,11 +386,41 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-6.jpg" alt="">
+          <div class="container-slider">
+            <div class="image-container">
+              <img class="image-before slider-image"
+                src="./assets/img/blog/picture_1_before.jpg"
+                alt="color photo" />
+              <img class="image-after slider-image"
+                src="./assets/img/blog/picture_2_after.jpg"
+                alt="black and white" />
+            </div>
+            <!-- step="10" -->
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="img-box">
+            <img src="images/s-1.jpg" alt="">
           </div>
           <div class="detail-box">
             <h6>
@@ -252,7 +429,7 @@
             <p>
               There are many variations of passages of Lorem Ipsum available, but
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="btn-box">
@@ -795,6 +972,7 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/slide-image.js"></script>
 
 
 </body>
