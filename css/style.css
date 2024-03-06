@@ -49,11 +49,11 @@ body {
 
 /*header section*/
 .hero_area {
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/landing.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 60% 100%;
+  background-size: 50% 100%;
 }
 
 .sub_page .hero_area {
@@ -501,11 +501,11 @@ a:focus {
 }
 
 .price_section .price_container .box {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   margin: 45px .65%;
   color: #ffffff;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .price_section .price_container .box .detail-box {

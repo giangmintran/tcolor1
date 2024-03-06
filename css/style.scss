@@ -80,7 +80,7 @@ body {
 
 /*header section*/
 .hero_area {
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/landing..jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: top right;
@@ -512,10 +512,10 @@ a:focus {
     text-align: center;
 
     .box {
-      flex-basis: 32%;
+      flex-basis: 20%;
       margin: 45px .65%;
       color: $white;
-      min-width: 300px;
+      min-width: 200px;
 
 
       .detail-box {
